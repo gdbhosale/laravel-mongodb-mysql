@@ -2,9 +2,11 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Moloquent;
 
-class Book extends Model
-{
-    //
+class Book extends Moloquent {
+    protected $collection = 'book_collection';
+    protected $connection = 'mongodb';
+    
+
 }

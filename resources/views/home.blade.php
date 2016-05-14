@@ -8,7 +8,13 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in!
+                    You are logged in!<br>
+                    <h3>Book Listing:</h3>
+                    <?php
+                    foreach ($books as $book) {
+                        echo "[".$book->name."]<br>\n";
+                    }
+                    ?>
                 </div>
             </div>
         </div>
